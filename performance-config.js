@@ -7,7 +7,6 @@
  * the workings of the server specifics.
  */
 module.exports = {
-
   /**
    * Whether to use basic GZip Compression on response bodies, when supported by
    * the requesting browser.
@@ -20,7 +19,7 @@ module.exports = {
    * by the requesting browser.
    * @see https://developer.mozilla.org/en-US/docs/Glossary/Brotli_compression
    */
-  enableBrotliCompression: false,
+  enableBrotliCompression: true,
 
   /**
    * Whether to send the 304 Caching Headers `ETag` and `Last-Modified` for
@@ -41,6 +40,5 @@ module.exports = {
    * The expected processing time in milliseconds of a "real" server under load
    * that has to talk to external systems.
    */
-  serverDuration: 1_000
-
+  serverDuration: 1000,
 };
