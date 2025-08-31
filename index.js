@@ -13,6 +13,6 @@
 
 const app = require("./src/app");
 
-app.listen(3000, () => {
-  console.log("Web server is ready at http://localhost:3000/");
+app.listen(3001, () => {
+  console.log("Web server is ready at http://localhost:3001/");
 });
