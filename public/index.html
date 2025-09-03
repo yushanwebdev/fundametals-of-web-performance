@@ -30,7 +30,7 @@
           <div class="site-icon">
             <img
               loading="lazy"
-              src="/assets/img/devstickers-logo.png"
+              src="/assets/img/webp/devstickers-logo.webp"
               alt="Developer Stickers Online"
             />
           </div>
@@ -54,18 +54,31 @@
 
       <section class="hero">
         <div class="illustration">
-          <img
-            class="desktop"
-            src="/assets/img/hero-desktop.png"
-            alt="Developer Stickers"
-            fetchpriority="high"
-          />
-          <img
-            class="mobile"
-            src="/assets/img/hero-mobile.png"
-            alt="Developer Stickers"
-            fetchpriority="high"
-          />
+          <picture class="illustration">
+            <source
+              media="(max-width: 720px)"
+              srcset="
+                /assets/img/webp/hero-mobile-360.webp   360w,
+                /assets/img/webp/hero-mobile-720.webp   720w,
+                /assets/img/webp/hero-mobile-1400.webp 1400w
+              "
+            />
+            <source
+              media="(min-width: 721px)"
+              srcset="
+                /assets/img/webp/hero-desktop-720.webp   720w,
+                /assets/img/webp/hero-desktop-1400.webp 1400w,
+                /assets/img/webp/hero-desktop-2800.webp 2800w
+              "
+            />
+            <img
+              src="/assets/img/webp/hero-desktop-2800.webp"
+              alt="Developer Stickers Online"
+              fetchPriority="high"
+              height="1200"
+              width="2800"
+            />
+          </picture>
         </div>
         <!-- NOTE: As of Chrome 129, we can trick it by hiding the LCP element behind a transparent element -->
         <!-- <div class="overlay"></div> -->
@@ -87,7 +100,7 @@
             <a href="/products/fast-sloth-sticker" class="mb-20">
               <img
                 loading="lazy"
-                src="/assets/img/fast-sloth-sticker.png"
+                src="/assets/img/webp/fast-sloth-sticker.webp"
                 alt="Fast Sloth Sticker"
                 loading="lazy"
               />
@@ -111,7 +124,7 @@
             <a href="/products/good-day-to-debug-sticker" class="mb-20">
               <img
                 loading="lazy"
-                src="/assets/img/good-day-to-debug-sticker.png"
+                src="/assets/img/webp/good-day-to-debug-sticker.webp"
                 alt="Good Day to Debug Sticker"
               />
               <h2>Good Day to Debug Sticker</h2>
@@ -133,7 +146,7 @@
             <a href="/products/js-happens-sticker" class="mb-20">
               <img
                 loading="lazy"
-                src="/assets/img/js-happens-sticker.png"
+                src="/assets/img/webp/js-happens-sticker.webp"
                 alt="JavaScript Happens"
               />
               <h2>JavaScript Happens</h2>
@@ -155,7 +168,7 @@
             <a href="/products/yo-dawg-sticker" class="mb-20">
               <img
                 loading="lazy"
-                src="/assets/img/yo-dawg-sticker.png"
+                src="/assets/img/webp/yo-dawg-sticker.webp"
                 alt="Yo Dawg Sticker"
               />
               <h2>Yo Dawg Sticker</h2>
@@ -179,7 +192,7 @@
           <picture>
             <img
               loading="lazy"
-              src="/assets/img/callout-1.png"
+              src="/assets/img/webp/callout-1.webp"
               alt="Express Your Developer Personality"
             />
           </picture>
@@ -198,7 +211,7 @@
           <picture>
             <img
               loading="lazy"
-              src="/assets/img/callout-2.png"
+              src="/assets/img/webp/callout-2.webp"
               alt="High-Quality Stickers Built to Last"
             />
           </picture>
@@ -218,7 +231,7 @@
           <picture>
             <img
               loading="lazy"
-              src="/assets/img/callout-3.png"
+              src="/assets/img/webp/callout-3.webp"
               alt="Perfect for Gifting"
             />
           </picture>
