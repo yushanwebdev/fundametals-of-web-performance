@@ -24,7 +24,7 @@ window.addEventListener("DOMContentLoaded", async () => {
       product.imagePath
     }?promo" alt="${product.name}" ${
       product.isPromo ? 'onload="showPromo()"' : ""
-    } />
+    } width="2400" height="2400" />
           <div class="product-copy flex-column">
             <h2>Flash Sale!!</h2>
             <h3>${product.name}</h3>
